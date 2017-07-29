@@ -1,5 +1,5 @@
-# 2017
-Evento ABC-DEV 2017
+# Evento ABCDev 2017
+Site do Evento ABC-DEV 2017
 
 ## Contribuindo
 
