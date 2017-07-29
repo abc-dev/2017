@@ -1,0 +1,100 @@
+html,
+body{
+  font-family: 'Open Sans', Helvetica, Arial, Sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.2em;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+strong{
+  font-family:  'Open Sans';
+  font-weight: 700;
+}
+
+em{
+  font-family:  'Open Sans';
+  font-weight: 400;
+  font-style: italic;
+}
+
+h1{
+  font-family: 'antoniobold';
+  font-size: 3.2em;
+  //font-size: 2.2em;
+  line-height: 1.2em;
+}
+
+h2{
+  margin-bottom: .5em;
+  font-family: 'antoniolight';
+  //font-size: 3.2em;
+  font-size: 2.6em;
+  font-weight: lighter;
+  line-height: 1.2em;
+  color: $brown;
+  //@extend .text-shadow;
+  @include text-shadow(1px,1px,0,$white);
+}
+
+h3{
+  margin-bottom: .5em;
+  font-family: 'antoniolight';
+  //font-size: 2.6em;
+  font-size: 2em;
+  font-weight: lighter;
+  line-height: 1.2em;
+  color: $brown;
+  @include text-shadow(1px,1px,0,$white);}
+
+h4{
+  margin-bottom: .5em;
+  font-family: 'antoniolight';
+  //font-size: 2.6em;
+  font-size: 1.8em;
+  font-weight: lighter;
+  line-height: 1.2em;
+  color: $text-brown;
+  @include text-shadow(1px,1px,0,$white);}
+
+h5{
+  margin-bottom: .5em;
+  font-family: 'antoniolight';
+  //font-size: 2.6em;
+  font-size: 1.8em;
+  font-weight: lighter;
+  line-height: 1.2em;
+  color: $text-yellow;}
+  //@include text-shadow(1px,1px,0,$white);}
+
+p{
+  margin-bottom: 2em;
+  line-height: 1.6em;
+  color: $text-grey;}
+
+li {
+  margin-bottom: 5px;
+  color: #4d4d4d;
+}
+
+time{
+  font-family: 'antoniobold';
+  //font-size: 3em;
+  font-size: 2em;
+  line-height: 1.1em;}
+
+blockquote {
+  text-align: center;
+  p{
+  font-style: italic;
+  color: $text-yellow;
+  line-height: 1.2em;}
+  strong{
+    font-family:  'Open Sans';
+    font-weight: 600;
+    font-style: italic;
+  }
+}
+
+small{
+  font-size: .85em;}
