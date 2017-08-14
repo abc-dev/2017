@@ -13,6 +13,13 @@
     border: medium solid $black;
   }
 
+  &::after {
+    content: url('../images/tube.svg');
+    z-index: 99999;
+    margin: 0.1%;
+    //position: absolute;
+  }
+
   &-hour{
     position: relative;
     display: block;

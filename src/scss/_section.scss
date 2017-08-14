@@ -11,17 +11,31 @@ section {
   }
 }
 
+#programacao {
+  padding-top: 4vh;
+  .wrapper{
+    width: 100%;
+
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    background: url('../images/footer.svg') repeat-x #c89858;
+    height: 50px;
+    width: 100%;
+  }
+}
 section#sobre,
 section#inscreva-se,
 section#palestrantes,
 section#programacao,
 section#contato,
 section#patrocinadores{ height: auto !important;}
-section:nth-of-type(odd) {
-
-  // @include shadow(1px,1px,5px);
-}
-
+// section:nth-of-type(odd) {
+//
+//   // @include shadow(1px,1px,5px);
+// }
 
 // section:nth-child(4) {
 // //section:nth-child(6) {
