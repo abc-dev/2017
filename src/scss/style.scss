@@ -12,8 +12,8 @@
 
 header{
   position: relative;
-  height: 92vh;
-  padding: 4% 0 5% 0;
+  height: 100vh;
+  padding: 1% 0 5% 0;
   //padding: 3% 0;
   font-family: 'antoniobold';
   color: $white;
@@ -23,35 +23,24 @@ header{
   background-position: center right;
   background-attachment: fixed;
   background-size: cover;
-  background-color: rgb(0, 96, 184);
+  background-color: $blue;
   .logo {
     width: 13em;
     margin-bottom: 1.2em;
   }
-  .subtitle{
+
+  .subtitle {
     margin-bottom: .5em;
-    font-size: 2.4em;
-    //font-size: 1.2em;
-    color: $white;}
+    font-size: 2.2em;
+    color: $white;
+  }
 
   img{
     margin-bottom: 2em;
-    //width: 36%;
-    //margin-bottom: .5em;
   }
 
   h1{
     margin-bottom: 0;
-  }
-  &::before{
-    content: 'Igreja Matriz - São Bernardo do Campo';
-    position: absolute;
-    top: 90%;
-    right: 2%;
-    font-family: 'antoniolight';
-    font-size: .85em;
-    color: $white;
-    @include text-shadow(1px,1px,0,$black);
   }
 }
 
@@ -59,17 +48,16 @@ nav{
   position: relative;
   display: flex;
   align-items: center;
-  //justify-content: space-between;
   justify-content: space-around;
-  //flex-direction: row;
   width: 100%;
   height: auto;
   padding: .5% 0;
-  background-color: $grey;
+  background-color: $white;
   @include shadow(1px,1px,5px);
   ul{
     li{
-      display: inline-block;}
+      display: inline-block;
+    }
   }
 }
 
@@ -82,43 +70,40 @@ nav{
 .socials{
   margin: 0 1% 0 1%;
   li{
-    margin: 0 .5em 0 .5em;}
+    margin: 0 .2em
+  }
 }
 
 .hamburger{
   display: none;
   width: 36px;
   margin: 0 .5em;
-  // font-family: 'antoniobold';
-  // font-size: 1.2em;
-  // color: $yellow;
   cursor: pointer;
-  img{
+  img {
     width: 36px;
   }
-  // &::before{
-  //   display: inline-block;
-  //   vertical-align: text-top;
-  //   margin-right: .5em;
-  //   content: url('../images/hamburger.svg');
-  // }
+
 }
-.main-menu{
+.main-menu {
   font-family: 'antonioregular';
-  font-size: 1.2em;
+  font-size: 1.1em;
   //font-size: 1.1em;
   text-transform: uppercase;
+
   li{
     //margin: 0 .5em;
     margin: 0 .4em;
-    line-height: 50%;}
+    line-height: 50%;
+  }
+
   a{
     display: flex;
-    color: $text-brown;
-    text-decoration: none;}
+    color: $blue;
+    text-decoration: none;
+  }
 }
 
-.locale{
+.locale {
   //margin-bottom: 1.2em;
   margin-bottom: .5em;
   font-family: 'antoniolight';
@@ -126,137 +111,171 @@ nav{
   //font-size: 1em;
   font-weight: lighter;
   line-height: 1.2em;
-  color: $white;}
+  color: $white;
+}
 
-.legend{
+.legend {
   position: absolute;
   right: 2%;
   top: 80%;
   font-family: 'antoniolight';
   color: $white;
-  @include text-shadow(1px,1px,0,$black);}
+  @include text-shadow(1px,1px,0,$black);
+}
 
-#local{
+#local {
   position: relative;
   //display: flex;
   .wrapper{
-    z-index: 20;}
+    z-index: 20;
+  }
 
-  iframe{
-    z-index: -1;
+  iframe {
+    z-index: 0;
     position: absolute;
     top: 0;
     left: 0%;
     width: 100%;
-    height: 100%;}
+    height: 100%;
+  }
 }
 
-.choice{
+.choice {
   display: flex;
   flex-direction: column;
   justify-content: center;
   @include block(90%, 1.5em, .9em);
   transition: all 0.4s ease 0s;
   &:hover{
-    @include shadow(0px,0px,12px);}
-
-  p{
-    margin-bottom: 1em;
-    &:last-child{
-      text-align: center;}
+    @include shadow(0px,0px,12px);
   }
 
-  li{
+  p {
+    margin-bottom: 1em;
+    &:last-child{
+      text-align: center;
+    }
+  }
+
+  li {
     margin-left: 1em;
     margin-bottom: .5em;
     color: $text-grey;
     list-style-type: circle;}
 
-  &-title{
+  &-title {
     font-family: 'antoniolight';
     font-size: 1.4em;
     color: $brown;
-    strong{
-      font-family: 'antonioregular';}
+
+    strong {
+      font-family: 'antonioregular';
+    }
   }
 }
-.adress{
+.adress {
   @include block(50%,2em,.9em);
   @include shadow(0px,0px,7px);
-  p{
-    margin-bottom: 1em;}
-  &-title{
+
+  p {
+    margin-bottom: 1em;
+  }
+  &-title {
     font-family: 'antoniolight';
     font-size: 1.4em;
-    color: $brown;}
+    color: $blue;
+  }
 }
 
-.support{
+.support {
   @include block(35%,0,.9em);
   background-color: white!important;
   display: flex;
   align-items: center;
   justify-content: center;
-  object-fit: cover;}
+  object-fit: cover;
+}
 
-.input-full{
-  width: 100%;}
+.input-full {
+  width: 100%;
+}
 
-textarea{
-  height: 5em;}
+textarea {
+  height: 5em;
+}
 
-#footer{
+#footer {
   padding: 4vw;
   font-size: .8em;
-  background: $black;
-  p{
+  background: $blue;
+
+  p {
     color: $light-grey;
-    margin: 0;}
-  a{
+    margin: 0;
+  }
+
+  a {
     color: $text-yellow;
     &:hover{
-      text-decoration: none;}
+      text-decoration: none;
+    }
   }
 }
 
-.development{
-  font-size: .9em;}
+.development {
+  font-size: .9em;
+}
 
-.trusteeship{
+.trusteeship {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  font-family: 'antoniobold';}
+  font-family: 'antoniobold';
+}
 
-.signature{
+.signature {
   width: 50%;
-  text-align: right;}
+  text-align: right;
+}
 
-@media (max-width: 959px){
-  .hamburger{
+@media (max-width: 959px) {
+  .hamburger {
     display: block;}
 }
 
 @media (min-width: 320px) and (max-width: 768px){
-  .wrapper{
-    width: 100%;}
-  header{
+  .wrapper {
+    width: 100%;
+  }
+
+  header {
     height: auto;
-    &::before{
+    &::before {
       top: 15%;
       left: -86%;
       font-size: .55em;
-      transform: rotate(-90deg);}
-    h1{
-    font-size: 2.2em;}
-    .subtitle{
-      font-size: 1.5em}
-    time{
-      font-size: 1.5em;}
-    .button-action_big{
-      font-size: 1em;}
+      transform: rotate(-90deg);
+    }
+
+    h1 {
+      font-size: 2.2em;
+    }
+
+    .subtitle {
+      font-size: 1.5em
+    }
+
+    time {
+      font-size: 1.5em;
+    }
+
+    .button-action_big {
+      font-size: 1em;
+    }
   }
-  .main-menu{
+  .main-menu {
+    @include shadow(1px,1px,3px);
+
     position: absolute;
     top: 0%;
     left: -120%;
@@ -267,31 +286,36 @@ textarea{
     text-align: right;
     background: $grey;
     transition: left 0.4s ease 0s;
-    @include shadow(1px,1px,3px);
-    li{
+
+    li {
       display: block;
       margin: 0 .3em;
       font-size: 1.5em;
-      line-height: 2em;}
+      line-height: 2em;
+    }
 
-    &::after{
+    &::after {
       display: block;
       padding: 40%;
       content: '';
-      background: $grey;}
+      background: $grey;
+    }
   }
 
-  li.close{
-    text-align: left;}
+  li.close {
+    text-align: left;
+  }
 
-  .hamburger{
-    flex-grow: 1;}
+  .hamburger {
+    flex-grow: 1;
+  }
 
-  .logo{
+  .logo {
     flex-grow: 2;
-    margin: .5em 0;}
+    margin: .5em 0;
+  }
 
-  .socials{
+  .socials {
     position: absolute;
     top: 0%;
     left: -120%;
@@ -301,101 +325,124 @@ textarea{
     padding: 1.2em 1em;
     background: $grey;
     transition: left 0.4s ease 0s;
-    li{
+
+    li {
       margin: 0 .3em;
       font-size: 1.5em;
       line-height: 2em;
     }
   }
-  .showup{
-    left: 0;}
+  .showup {
+    left: 0;
+  }
 
-  .subtitle{
-    text-align: center;}
+  .subtitle {
+    text-align: center;
+  }
 
-  .pale{
-    flex-direction: row;}
+  .pale {
+    flex-direction: row;
+  }
 
   .choice,
   .speaker,
   .adress,
   .trusteeship,
-  .development{
-    width: 100%;}
+  .development {
+    width: 100%;
+  }
 
-  .sponsor-gold{
-    width: 100%;}
-  .sponsor-sliver{
-    width: 80%;}
-  .sponsor-bronze{
-    width: 70%;}
+  .sponsor-gold {
+    width: 100%;
+  }
 
-  #local{
+  .sponsor-sliver {
+    width: 80%;
+  }
+
+  .sponsor-bronze {
+    width: 70%;
+  }
+
+  #local {
     height: 100%;
-    background: url(../images/maps.jpg) top no-repeat}
+    background: url(../images/maps.jpg) top no-repeat
+  }
 
-  .adress{
-    font-family: .8em;}
+  .adress {
+    font-family: .8em;
+  }
 
-  .ribbon{
+  .ribbon {
     &::before,
-    &::after{
+    &::after {
       top: 1.6em;
-      right: -5em;}
+      right: -5em;
+    }
   }
 
   input[type="text"].input,
-  input[type="email"].input{
+  input[type="email"].input {
     width: 100%;
     margin-left: 0;
   }
 }
 
-
-
-@media(min-width: 768px) and (max-width: 959px){
+@media(min-width: 768px) and (max-width: 959px) {
   .brand-logo {
     width: 30%;
   }
-  .showup{
+
+  .showup {
     top: 0;
   }
-  .socials{
-    flex-grow: 0;
-    li{
-      margin: 0 .2em;}
-  }
-  .hamburger{
-    flex-grow: 2;}
 
-  .logo{ flex-grow: 1;}
+  .socials {
+    flex-grow: 0;
+    li {
+      margin: 0 .2em;
+    }
+  }
+  .hamburger {
+    flex-grow: 2;
+  }
+
+  .logo{
+    flex-grow: 1;
+  }
 
   .choice{
-    width: 80%;}
+    width: 80%;
+  }
 
-  .speaker{
+  .speaker {
     width: 48%;
     font-size: .8em;
+
     .hide {
-      padding: .6em;}
+      padding: .6em;
+    }
   }
-  .adress{
+
+  .adress {
     width: 90%;
   }
-  .sponsor{
-    &-gold{
-    width: 46%;}
+  .sponsor {
+    &-gold {
+      width: 46%;
+    }
 
     &-sliver{
-    width: 42%;}
+      width: 42%;
+    }
 
-    &-bronze{
-    width: 38%;}
+    &-bronze {
+      width: 38%;
+    }
   }
 }
 
 @media (min-width: 1024px) {
-//and (max-width: 1277px){
   .brand-logo {
     width: 30%;
   }
@@ -436,7 +483,6 @@ textarea{
     width: 50%;}
 }
 @media(min-width: 1277px) {
-//and (max-width: 1440px){
   .main-menu li {
     margin: 0 .4em;
     line-height: 50%;}
@@ -444,7 +490,7 @@ textarea{
 
   .sponsor{
     &-gold{
-      width: 38%;
+      width: 32%;
       &:first-child{
         margin-left: 0;}
       &:last-child{
@@ -471,17 +517,16 @@ textarea{
   }
 
   .support{
-    @include block(15%,0,.9em);}
+    @include block(20%,0,.9em);}
 
 }
 @media (min-width: 1400px){
-//} and (max-width: 2000px){
   .wrapper{
     width: 90%;}
     .support{
       @include block(15%,0,.9em);}
 }
-@media (min-width: 1600px){//} and (max-width: 2000px){
+@media (min-width: 1600px){
   .wrapper{
     width: 65%;}
 }

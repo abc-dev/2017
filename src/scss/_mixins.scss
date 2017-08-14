@@ -5,13 +5,8 @@
   text-shadow: $x $y $blur $color;}
 
 @mixin button($width, $color, $bg, $font-size){
-  display: flex;
-  align-items:center;
-  justify-content: center;
   width: $width;
-  white-space: nowrap;
-  vertical-align: middle;
-  padding: .6em 1.2em .6em 1.2em;
+  padding: .7em 1.2em .4em 1.2em;
   font-family: 'antoniobold';
   font-size: $font-size;
   line-height: 1.2em;
@@ -19,14 +14,15 @@
   text-decoration: none;
   color: $color;
   background-color: $bg;
-  border-radius: 6px;
+  border: thin solid $brown;
+  border-radius: 9px;
   cursor: pointer;
   transition: background-color 0.4s ease 0s;
   &:hover{
     background-color: darken($bg, 6%);}
 }
 
-@mixin block($width,$padding,$font-size){
+@mixin block($width, $padding, $font-size) {
   position: relative;
   overflow: hidden;
   width: $width;
@@ -35,4 +31,5 @@
   font-size: $font-size;
   background-color: $grey;
   border: thin solid $light-grey;
-  border-radius: 5px;}
+  border-radius: 5px;
+}

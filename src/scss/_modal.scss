@@ -3,9 +3,10 @@
   right: 2%;
   top: 2%;
   z-index: 40;
-  color: $text-yellow;
+  color: $blue;
   font-size: 18px;
-  font-family: 'open_sansbold';
+  font-family: 'Open Sans';
+  font-weight: 700;
   text-decoration: none;
 }
 .modal{
@@ -13,7 +14,6 @@
   font-size: .5em;
   p{
     font-size: 1.6em;
-    //margin-bottom: .5em;
     a{
       color: $text-yellow;
       &:hover{
@@ -27,7 +27,7 @@
     font-family: 'antoniolight';
     font-weight: lighter;
     line-height: 1.2em;
-    color: $brown;}
+    color: $blue;}
 }
 
 .modal:before {

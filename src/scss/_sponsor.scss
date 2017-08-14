@@ -1,16 +1,17 @@
-.sponsor{
-  &-gold{
+.sponsor {
+  &-gold {
     @include block(32%,0,.9em);
-    // max-width: 20rem;
-    // padding: 10px;
-    &:first-child{
-        margin-left: 0;}
 
-    &:last-child{
-      margin-right: 0;}
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
 
     &__header {
-      background: #fff;
+      // background: #fff;
       height: 200px;
       display: flex;
       justify-content: center;
@@ -46,7 +47,7 @@
     font-family: 'antoniobold';
     font-size: 1.4em;
     line-height: 1.4em;
-    color: $brown;}
+    color: $blue;}
 }
 
 .link-sponsor{
