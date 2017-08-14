@@ -4,7 +4,7 @@ window.onscroll = scrollMenu;
 window.onload = onLoad;
 showMenu();
 
-function scrollMenu(){
+function scrollMenu() {
   let menu = document.querySelector('nav');
   let top = window.pageYOffset || document.documentElement.scrollTop;
   let wHeight = window.innerHeight;
@@ -18,7 +18,7 @@ function scrollMenu(){
   }
 }
 
-function showMenu(){
+function showMenu() {
   let hamburger = document.querySelector('.hamburger');
   let mainMenu = document.querySelector('.main-menu');
   let socials = document.querySelector('.socials');
@@ -49,12 +49,12 @@ function showMenu(){
     }
   }
 
-  function hideMainMenuAndSocials(){
+  function hideMainMenuAndSocials() {
     mainMenu.classList.remove('showup');
     socials.classList.remove('showup');
   }
 
-  function showMainMenuAndSocial(){
+  function showMainMenuAndSocial() {
     mainMenu.classList.add('showup');
     socials.classList.add('showup');
   }
@@ -64,7 +64,7 @@ function showMenu(){
   }
 }
 
-function onLoad(){
+function onLoad() {
   let mq = window.matchMedia('(min-width: 1200px)');
   let locationMap = document.querySelector('#local');
   mq.addListener(loadMap);
