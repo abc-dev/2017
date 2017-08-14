@@ -1,0 +1,26 @@
+.speaker{
+  @include block(20%,0,.9em);
+  margin: 0 1em 2em 1em;
+  background: $white;
+
+  &-title{
+    @extend .title;
+    margin-bottom: 1em;}
+
+  p {
+    margin-bottom: .5em;
+    font-size: .9em;}
+
+  a {
+    color: $text-yellow;}
+
+  img {
+    margin-bottom: 0;
+    object-fit: scale-down;
+  }
+
+  .speaker-info {
+    padding: 1em;
+    background: $white;
+  }
+}
