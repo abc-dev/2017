@@ -13,9 +13,6 @@
 header{
   position: relative;
   height: 100vh;
-  // padding: 1% 0 5% 0;
-  // text-shadow: 1px 1px 1px #000;
-  //padding: 3% 0;
   font-family: 'antoniobold';
   color: $white;
   text-align: center;
@@ -65,11 +62,8 @@ nav{
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  align-items: center;
+  justify-content: space-around;
   width: 100%;
   height: auto;
   padding: .5% 0;
@@ -108,18 +102,14 @@ nav{
 .main-menu {
   font-family: 'antonioregular';
   font-size: 1.1em;
-  //font-size: 1.1em;
   text-transform: uppercase;
 
   li{
-    //margin: 0 .5em;
     margin: 0 .4em;
     line-height: 50%;
   }
 
-  a{
-    display: -webkit-box;
-    display: -ms-flexbox;
+  a {
     display: flex;
     color: $blue;
     text-decoration: none;
@@ -147,7 +137,6 @@ nav{
 
 #local {
   position: relative;
-  //display: flex;
   .wrapper{
     z-index: 20;
     margin-left: 30vw;
@@ -166,18 +155,10 @@ nav{
 }
 
 .choice {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  justify-content: center;
   @include block(90%, 1.5em, .9em);
-  -webkit-transition: all 0.4s ease 0s;
   transition: all 0.4s ease 0s;
   &:hover{
     @include shadow(0px,0px,12px);
@@ -226,14 +207,9 @@ nav{
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -o-object-fit: cover;
-     object-fit: cover;
+  align-items: center;
+  justify-content: center;
+  object-fit: cover;
 }
 
 .input-full {
@@ -267,15 +243,9 @@ textarea {
 }
 
 .trusteeship {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-direction: column;
+  flex-wrap: wrap;
   font-family: 'antoniobold';
 }
 
@@ -300,8 +270,7 @@ textarea {
       top: 15%;
       left: -86%;
       font-size: .55em;
-      -webkit-transform: rotate(-90deg);
-              transform: rotate(-90deg);
+      transform: rotate(-90deg);
     }
 
     h1 {
@@ -332,7 +301,6 @@ textarea {
     font-size: .75em;
     text-align: right;
     background: $grey;
-    -webkit-transition: left 0.4s ease 0s;
     transition: left 0.4s ease 0s;
 
     li {
@@ -355,15 +323,11 @@ textarea {
   }
 
   .hamburger {
-    -webkit-box-flex: 1;
-        -ms-flex-positive: 1;
-            flex-grow: 1;
+   flex-grow: 1;
   }
 
   .logo {
-    -webkit-box-flex: 2;
-        -ms-flex-positive: 2;
-            flex-grow: 2;
+    flex-grow: 2;
     margin: .5em 0;
   }
 
@@ -376,7 +340,6 @@ textarea {
     margin-left: 35%;
     padding: 1.2em 1em;
     background: $grey;
-    -webkit-transition: left 0.4s ease 0s;
     transition: left 0.4s ease 0s;
 
     li {
@@ -394,10 +357,7 @@ textarea {
   }
 
   .pale {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    flex-direction: row;
   }
 
   .choice,
@@ -454,23 +414,17 @@ textarea {
   }
 
   .socials {
-    -webkit-box-flex: 0;
-        -ms-flex-positive: 0;
-            flex-grow: 0;
+    flex-grow: 0;
     li {
       margin: 0 .2em;
     }
   }
   .hamburger {
-    -webkit-box-flex: 2;
-        -ms-flex-positive: 2;
-            flex-grow: 2;
+    flex-grow: 2;
   }
 
   .logo{
-    -webkit-box-flex: 1;
-        -ms-flex-positive: 1;
-            flex-grow: 1;
+    flex-grow: 1;
   }
 
   .choice{
@@ -512,16 +466,9 @@ textarea {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     width: 96%;
     margin: 0 auto;}
 
