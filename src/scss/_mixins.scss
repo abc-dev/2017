@@ -1,5 +1,4 @@
 @mixin shadow($x, $y, $blur){
-  -webkit-box-shadow: $x $y $blur rgba(62,50,3,.75);
           box-shadow: $x $y $blur rgba(62,50,3,.75);}
 
 @mixin text-shadow($x,$y,$blur,$color){
@@ -18,7 +17,6 @@
   border: thin solid $brown;
   border-radius: 9px;
   cursor: pointer;
-  -webkit-transition: background-color 0.4s ease 0s;
   transition: background-color 0.4s ease 0s;
   &:hover{
     background-color: darken($bg, 6%);}
@@ -32,6 +30,5 @@
   margin-bottom: 2em;
   font-size: $font-size;
   background-color: $grey;
-  //border: thin solid $light-grey;
   border-radius: 5px;
 }
