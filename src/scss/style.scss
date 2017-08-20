@@ -91,7 +91,10 @@ nav{
 .socials{
   margin: 0 1% 0 1%;
   li{
-    margin: 0 .2em
+    margin: 0 .2em;
+    img {
+      width: 32px;
+    }
   }
 }
 
