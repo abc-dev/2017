@@ -142,8 +142,6 @@ nav{
   position: relative;
   .wrapper{
     z-index: 20;
-    margin-left: 30vw;
-    text-align: center;
   }
 
   iframe {
@@ -538,7 +536,7 @@ textarea {
   }
 
   .support{
-    @include block(25%,0,.9em);}
+    @include block(20%,0,.9em);}
 
 }
 @media (min-width: 1400px){
