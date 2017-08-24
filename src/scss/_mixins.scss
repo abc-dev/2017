@@ -1,5 +1,5 @@
 @mixin shadow($x, $y, $blur){
-  box-shadow: $x $y $blur rgba(62,50,3,.75);}
+          box-shadow: $x $y $blur rgba(62,50,3,.75);}
 
 @mixin text-shadow($x,$y,$blur,$color){
   text-shadow: $x $y $blur $color;}
@@ -30,6 +30,5 @@
   margin-bottom: 2em;
   font-size: $font-size;
   background-color: $grey;
-  border: thin solid $light-grey;
   border-radius: 5px;
 }
