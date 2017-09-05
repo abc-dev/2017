@@ -1002,7 +1002,7 @@ textarea {
     margin: 0 .4em;
     line-height: 50%; }
   .sponsor-gold {
-    width: 32%; }
+    width: 24%; }
     .sponsor-gold:first-child {
       margin-left: 0; }
     .sponsor-gold:last-child {
@@ -1024,7 +1024,7 @@ textarea {
   .support {
     position: relative;
     overflow: hidden;
-    width: 20%;
+    width: 18%;
     padding: 0;
     margin-bottom: 2em;
     font-size: 0.9em;
