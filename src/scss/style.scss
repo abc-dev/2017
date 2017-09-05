@@ -509,7 +509,7 @@ textarea {
 
   .sponsor{
     &-gold{
-      width: 32%;
+      width: 24%;
       &:first-child{
         margin-left: 0;}
       &:last-child{
@@ -536,7 +536,7 @@ textarea {
   }
 
   .support{
-    @include block(20%,0,.9em);}
+    @include block(18%,0,.9em);}
 
 }
 @media (min-width: 1400px){
