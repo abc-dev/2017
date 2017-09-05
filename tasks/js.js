@@ -3,7 +3,7 @@
 let gulp = require('gulp');
 let plumber = require('gulp-plumber');
 let uglify = require('gulp-uglify');
-// let notify = require('gulp-notify');
+let notify = require('gulp-notify');
 let babel = require('gulp-babel');
 
 gulp.task('js', jsTask);
@@ -14,5 +14,5 @@ function jsTask() {
     .pipe(plumber())
     .pipe(babel())
     .pipe(gulp.dest('build/js'))
-    // .pipe(notify('JS nice!'));
+    .pipe(notify('JS nice!'));
 };
