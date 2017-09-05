@@ -24,5 +24,5 @@ function scssTask() {
     // .pipe(cssnano())
     .pipe(rename({suffix: '.min'}))
     .pipe(gulp.dest('build/css'))
-    .pipe(notify('CSS OK!'));
+    // .pipe(notify('CSS OK!'));
 }
