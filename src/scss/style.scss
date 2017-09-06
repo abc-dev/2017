@@ -381,6 +381,16 @@ textarea {
     width: 70%;
   }
 
+  .sponsor-gold__header {
+    img[src*="vericode"] {
+      width: 75%;
+    }
+
+    img[src*="gravento"] {
+      width: 70%;
+    }
+  }
+
   #local {
     height: 100%;
     background: url(../images/maps.jpg) top no-repeat
@@ -509,7 +519,7 @@ textarea {
 
   .sponsor{
     &-gold{
-      width: 24%;
+      width: 26%;
       &:first-child{
         margin-left: 0;}
       &:last-child{

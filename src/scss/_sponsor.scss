@@ -16,6 +16,14 @@
       display: flex;
       justify-content: center;
       align-items: center;
+
+      img[src*="keep-it-simple"] {
+        max-height: 185px;
+      }
+
+      img[src*="code-prestige"] {
+        max-height: 280px;
+      }
     }
 
     &__logo {
