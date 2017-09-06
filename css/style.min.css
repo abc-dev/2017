@@ -430,7 +430,7 @@ section#inscreva-se,
 section#palestrantes,
 section#programacao,
 section#contato,
-section#patrocinadores {
+section#patrocinio {
   height: auto !important; }
 
 .speaker {
@@ -554,6 +554,10 @@ dd {
     justify-content: center;
     -ms-flex-align: center;
     align-items: center; }
+    .sponsor-gold__header img[src*="keep-it-simple"] {
+      max-height: 185px; }
+    .sponsor-gold__header img[src*="code-prestige"] {
+      max-height: 280px; }
   .sponsor-gold__logo {
     display: -ms-flexbox;
     display: flex;
@@ -917,6 +921,10 @@ textarea {
     width: 80%; }
   .sponsor-bronze {
     width: 70%; }
+  .sponsor-gold__header img[src*="vericode"] {
+    width: 75%; }
+  .sponsor-gold__header img[src*="gravento"] {
+    width: 70%; }
   #local {
     height: 100%;
     background: url(../images/maps.jpg) top no-repeat; }
@@ -1002,7 +1010,7 @@ textarea {
     margin: 0 .4em;
     line-height: 50%; }
   .sponsor-gold {
-    width: 24%; }
+    width: 26%; }
     .sponsor-gold:first-child {
       margin-left: 0; }
     .sponsor-gold:last-child {
