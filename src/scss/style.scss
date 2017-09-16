@@ -266,7 +266,8 @@ textarea {
   }
 
   header {
-    height: auto;
+    min-height: 550px;
+
     &::before {
       top: 15%;
       left: -86%;
