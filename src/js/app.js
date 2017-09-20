@@ -24,30 +24,8 @@ function showMenu(){
   let socials = document.querySelector('.socials');
   let linkMenu = mainMenu.querySelectorAll('a');
 
-  setMobileCodeOfConduct();
-
   hamburger.addEventListener('click', showMainMenuAndSocial);
   linkMenu.forEach(addEventClick);
-
-  function setMobileCodeOfConduct() {
-    let mediaQuery = window.window.matchMedia('(max-width: 959px)');
-    if (mediaQuery.matches) {
-      let link = document.querySelector('a[href="#code-of-conduct"]');
-      link.href = 'codigo-de-conduta.html';
-
-      let li = document.createElement('li');
-      li.classList.add('close');
-      let span = document.createElement('span');
-      let img = document.createElement('img');
-      img.src = 'images/close.svg';
-
-      span.appendChild(img);
-      li.appendChild(span);
-      mainMenu.insertBefore(li, mainMenu.firstChild);
-
-      span.addEventListener('click', hideMainMenuAndSocials);
-    }
-  }
 
   function hideMainMenuAndSocials(){
     mainMenu.classList.remove('showup');
