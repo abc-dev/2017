@@ -843,7 +843,7 @@ textarea {
   .wrapper {
     width: 100%; }
   header {
-    height: auto; }
+    min-height: 550px; }
     header::before {
       top: 15%;
       left: -86%;
@@ -894,7 +894,7 @@ textarea {
     left: -120%;
     width: auto;
     height: auto;
-    margin-left: 35%;
+    margin-left: 50%;
     padding: 1.2em 1em;
     background: #f9f9f9;
     transition: left 0.4s ease 0s; }
@@ -904,6 +904,9 @@ textarea {
       line-height: 2em; }
   .showup {
     left: 0; }
+    .showup.socials {
+      left: 0;
+      max-width: 50%; }
   .subtitle {
     text-align: center; }
   .pale {
