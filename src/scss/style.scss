@@ -266,7 +266,8 @@ textarea {
   }
 
   header {
-    height: auto;
+    min-height: 550px;
+
     &::before {
       top: 15%;
       left: -86%;
@@ -338,7 +339,7 @@ textarea {
     left: -120%;
     width: auto;
     height: auto;
-    margin-left: 35%;
+    margin-left: 50%;
     padding: 1.2em 1em;
     background: $grey;
     transition: left 0.4s ease 0s;
@@ -351,6 +352,11 @@ textarea {
   }
   .showup {
     left: 0;
+
+    &.socials {
+      left: 0;
+      max-width: 50%;
+    }
   }
 
   .subtitle {
