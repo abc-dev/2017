@@ -339,10 +339,11 @@ textarea {
     left: -120%;
     width: auto;
     height: auto;
-    margin-left: 50%;
+    margin-left: 45%;
+    opacity: 0;
     padding: 1.2em 1em;
     background: $grey;
-    transition: left 0.4s ease 0s;
+    transition: left 0.4s ease 0s, opacity 0.1s ease 0s;
 
     li {
       margin: 0 .3em;
@@ -355,7 +356,8 @@ textarea {
 
     &.socials {
       left: 0;
-      max-width: 50%;
+      max-width: 40%;
+      opacity: 1;
     }
   }
 
